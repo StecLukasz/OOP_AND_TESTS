@@ -1,11 +1,11 @@
 package edu.lust.sda.multithreaging.interfaces.mutliExtending;
 
 public class Human implements Student, Performer{
+
     @Override
     public void perform() {
         System.out.println("Perform metgod implementation");
     }
-
     @Override
     public void study() {
         System.out.println("Study method implementation");
