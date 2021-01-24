@@ -1,6 +1,7 @@
 package edu.lust.sda.java8.functionalInterfaces.supplier;
 
 import edu.lust.sda.java8.Car;
+import edu.lust.sda.tests.zadaniadomowe.KlientBanku;
 
 import java.util.function.Supplier;
 
