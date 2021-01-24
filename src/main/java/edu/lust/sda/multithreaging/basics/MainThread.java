@@ -63,7 +63,7 @@ public class MainThread {
                      * runnableSample robi plik i zapisuje nagłówek i czeka aż dostanie dane z otherThread
                      * żeby uzupełnić plik
                      * */
-                    otherThread.join();
+                    otherThread.join(6000);
                     System.out.println(ANSI_RED+ "Nadpisany wątek pracuje, bo tamten skończył!");
                 } catch (InterruptedException e) {
                     System.out.println(ANSI_RED + "Przerrrrrrrrrrwany wątek RunnableSample :(");
