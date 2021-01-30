@@ -40,6 +40,8 @@ public class ReflectionDemo {
             Method setNameMethod = studentClass.getDeclaredMethod("setName", String.class);
             Method getNameMethod = studentClass.getDeclaredMethod("getName");
             setNameMethod.invoke(studentRef,"Mariola");
+            Method getAllUniversityInfoMethod = studentClass.getDeclaredMethod("getAllUniversityInfo");
+            getAllUniversityInfoMethod.setAccessible(true);
             System.out.println(getNameMethod.invoke(studentRef));
 
 
