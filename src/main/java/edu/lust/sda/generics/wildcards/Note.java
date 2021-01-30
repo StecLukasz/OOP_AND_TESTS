@@ -7,4 +7,7 @@ public class Note {
         this.note = note;
     }
 
+    public String getNote() {
+        return note;
+    }
 }
