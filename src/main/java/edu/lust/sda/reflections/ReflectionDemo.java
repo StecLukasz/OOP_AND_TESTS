@@ -44,6 +44,9 @@ public class ReflectionDemo {
             getAllUniversityInfoMethod.setAccessible(true);
             System.out.println(getNameMethod.invoke(studentRef));
 
+            /**
+             * dostep do metody przywatnej trzeba otworzyć  tak jak 3 linijki wyżej
+             * */
 
             System.out.println("Powołany refleksyjnie, ale jest do niego dostęp, bo to normalny obiekt");
 //            studentRef.setSurname() ;

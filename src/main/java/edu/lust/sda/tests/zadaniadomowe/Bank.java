@@ -34,11 +34,11 @@ public class Bank {
             return false;
         }
         //identyfikator pobieramy z metody żeby się podbił do kolejnej wartości dla następnego klienta
-        return customers.add(new Customer(name,surname,getNextCustomerInfoNumber());
+        return customers.add(new Customer(name,surname,getNextCustomerInfoNumber()));
     }
 
     public boolean eraseCustomer(String name, String surname){
-        Customer customerToErase = new Customer(name, surname)
+        Customer customerToErase = new Customer(name, surname);
         for (Customer customer : customers){
             if (customer.equals(customerToErase)){
                 if (customer.getAccountList().isEmpty()){
